@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="sandr"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-03-24 10:24:06 PM"/>
+        <attribute name="created" value="c2FuZHI7REVTS1RPUC1SOVVJU1VKOzIwMjEtMDMtMjQ7MTA6MDc6MzEgUE07MjkyOA=="/>
+        <attribute name="edited" value="c2FuZHI7REVTS1RPUC1SOVVJU1VKOzIwMjEtMDMtMjQ7MTA6MjQ6MDYgUE07MTszMDM3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Currentprice" type="Real" array="False" size=""/>
+            <declare name="Numberstock" type="Real" array="False" size=""/>
+            <declare name="Value" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter current stock price: &quot;" newline="True"/>
+            <input variable="Currentprice"/>
+            <output expression="&quot;Enter quantity of stock: &quot;" newline="True"/>
+            <input variable="Numberstock"/>
+            <assign variable="Value" expression="Numberstock*Currentprice"/>
+            <output expression="&quot;Current value of stock: &quot; &amp; Value" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="sandr"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-03-24 10:07:22 PM"/>
+        <attribute name="created" value="c2FuZHI7REVTS1RPUC1SOVVJU1VKOzIwMjEtMDMtMjQ7MDk6NTc6NDMgUE07Mjk0NA=="/>
+        <attribute name="edited" value="c2FuZHI7REVTS1RPUC1SOVVJU1VKOzIwMjEtMDMtMjQ7MTA6MDc6MjIgUE07MTszMDM2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Exam1" type="Real" array="False" size=""/>
+            <declare name="Exam2" type="Real" array="False" size=""/>
+            <declare name="Total" type="Real" array="False" size=""/>
+            <declare name="Exam1r" type="Real" array="False" size=""/>
+            <declare name="Exam2r" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter exam 1 score: &quot;" newline="True"/>
+            <input variable="Exam1"/>
+            <output expression="&quot;Enter exam 2 score: &quot;" newline="True"/>
+            <input variable="Exam2"/>
+            <assign variable="Exam1r" expression="Exam1*.60"/>
+            <assign variable="Exam2r" expression="Exam2*.4"/>
+            <assign variable="Total" expression="Exam1r+Exam2r"/>
+            <output expression="&quot;Total grade: &quot; &amp; Total" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
